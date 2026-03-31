@@ -1,5 +1,5 @@
 
-import CustomCursor from '@/src/components/customCursor';
+import CustomCursor from '@/src/components/CustomCursor';
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 

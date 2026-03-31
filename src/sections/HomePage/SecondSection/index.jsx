@@ -1,4 +1,4 @@
-export default function SecondSection() {
+export default function secondSection() {
   return (
     <section className="min-h-screen relative bg-black">
       <div className="mx-auto w-82 h-fit align-center pt-30">
