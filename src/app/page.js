@@ -1,6 +1,6 @@
 import Header from "@/src/components/Header"
 import Herosection from "@/src/sections/HomePage/HeroSection";
-import Secondsection from "@/src/sections/HomePage/Secondsection";
+import SecondSection from "@/src/sections/HomePage/SecondSection";
 import Footer from "@/src/components/Footer";
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Header />
       <Herosection/>
-      <Secondsection/>
+      <SecondSection/>
       <Footer/>
     </>
   );
