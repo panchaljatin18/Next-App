@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+/* Dark-only base colors */
+:root {
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1025px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  --breakpoint-3xl: 1700px;
+  --font-inter: var(--font-inter);
+  --font-poppins: var(--font-poppins);
+}
+
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+
+/* GLOBAL BODY SETTINGS */
+body {
+  background: var(--site-bg);
+  color: var(--site-fg);
+  margin: 0;
+  padding: 0;
+}
+
+/* Fix Chrome autofill background and text color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #ffffff;
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: inset 0 0 20px 20px transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for all browsers while keeping scroll functionality */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  font-family: var(--font-poppins);
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.section-padding-y {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 640px) {
+  .section-padding-y {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-padding-y {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding-y {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.px-wrapper {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .px-wrapper {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .px-wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .px-wrapper {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
